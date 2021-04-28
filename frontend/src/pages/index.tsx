@@ -10,6 +10,8 @@ import ptBR from "date-fns/locale/pt-BR";
 import { convertDuranteTotimeString } from "../utils/convertDuranteTotimeString";
 
 import styles from "../../styles/home.module.scss";
+import { PlayerContext } from "../contexts/PlayerContext";
+import { useContext } from "react";
 
 type Episode = {
   id: string;
@@ -35,6 +37,8 @@ export default function Home({ latesEpisodes, allEpisodes }: HomeProps) {
   //     .then(data => console.log(data))
   // }, []);
   // FIM - Chamanda para uma api usando SPA
+  const {play} = useContext(PlayerContext);
+
   return (
     <div className={styles.homePage}>
       <section className={styles.latesEpisodes}>
@@ -61,8 +65,8 @@ export default function Home({ latesEpisodes, allEpisodes }: HomeProps) {
                   <span>{uniqEpisode.durationAsString}</span>
                 </div>
 
-                <button type="button">
-                  <img src="/play-green.svg" alt="Tocar Episódio" />
+                <button type="button" onClick={() => play(uniqEpisode)}>
+                  <img src="/play-green.svg" alt="Tocar Episódio"      />
                 </button>
               </li>
             );

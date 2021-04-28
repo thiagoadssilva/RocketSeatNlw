@@ -10,7 +10,6 @@
 
 <hr>
 
-
 ## Usando TypeScript
 
 		 yarn add typescript @types/react @types/node -D
@@ -68,3 +67,16 @@
 
 
 <hr>
+
+## Rc - Slider
+
+	    yarn add rc-slider
+
+* Link para a instalação completa
+	* https://www.npmjs.com/package/rc-slider
+  
+
+
+<hr>
+
+

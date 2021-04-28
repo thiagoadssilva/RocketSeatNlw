@@ -16,3 +16,8 @@
 
 ![Tela Principal](image/02.png)
 <hr>
+
+## <b>Aside do Player</b>
+
+![Tela Principal](image/03.png)
+<hr>
