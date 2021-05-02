@@ -99,12 +99,14 @@
 
   margin-top: 2.5rem;
   gap: 1.5rem;
+  
 
   button{
     background: transparent;
     border: 0;
     font-size: 0;
     transition: filter 0.2s;
+    cursor: pointer;
 
     &:disabled{
       cursor: default;
